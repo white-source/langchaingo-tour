@@ -5,6 +5,13 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Python Debugger: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        },
+        {
             "name": "Containers .NET Attach (Preview)",
             "type": "docker",
             "request": "attach",
@@ -13,7 +20,6 @@
                 "/src": "${workspaceFolder}"
             }
         },
-        
         {
             "name": "Launch Package",
             "type": "go",
